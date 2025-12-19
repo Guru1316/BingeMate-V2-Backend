@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000", "https://guru1316.github.io"],
+    origin: ["http://localhost:5173", "http://localhost:3000", "https://guru1316.github.io", "https://binge-mate-frontend.vercel.app"],
     credentials: true
 }));
 
