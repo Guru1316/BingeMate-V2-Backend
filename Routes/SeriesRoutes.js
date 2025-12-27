@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.route("/")
     .get(seriesController.getAllSeries)
-    .post(seriesController.createSeries);
+    .post(protect, seriesController.createSeries);
 
 router.route("/:id")
     .get(seriesController.getSeries)
