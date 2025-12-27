@@ -8,7 +8,7 @@ const seriesSchema = new mongoose.Schema({
     },
     tmdbId: {
         type: Number,
-        required: [true, "TMDB ID is required"]
+        required: false
     },
     name: {
         type: String,
